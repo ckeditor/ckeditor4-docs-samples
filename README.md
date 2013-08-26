@@ -1,0 +1,2 @@
+ckeditor-docs-samples
+=====================
