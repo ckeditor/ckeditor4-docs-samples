@@ -48,8 +48,24 @@
 CKEDITOR.replace( 'editor1', {
 	// Load the simplebox plugin.
 	extraPlugins: 'simplebox',
+
+	// Following options are set to make sample more clear for demonstration purposes.
+
 	// Set height for making more content visible.
-	height: 500
+	height: 500,
+	// Rearrange toolbar groups and remove unnecessary plugins.
+	toolbarGroups: [
+		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+		{ name: 'links' },
+		{ name: 'insert' },
+		{ name: 'document',	   groups: [ 'mode' ] },
+		'/',
+		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+		{ name: 'paragraph',   groups: [ 'list', 'indent' ] },
+		{ name: 'styles' },
+		{ name: 'about' }
+	],
+	removePlugins: 'font,iframe,pagebreak,flash,stylescombo,print,preview,save,smiley,pastetext,pastefromword'
 } );
 
 	</script>
