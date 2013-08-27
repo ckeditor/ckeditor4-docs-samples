@@ -15,21 +15,25 @@ CKEDITOR.plugins.add( 'simplebox', {
 		// Plugin's developer can also leave styling for plugin's users completely.
 		CKEDITOR.addCss(
 			'.simplebox {' +
-				'padding: 5px;' +
+				'padding: 8px;' +
 				'margin: 10px;' +
-				'background: #BBB;' +
+				'background: #eee;' +
+				'border-radius: 8px;' +
+				'border: 1px solid #ddd;' +
+				'box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;' +
+			'}' +
+			'.simplebox-title, .simplebox-content {' +
+				'box-shadow: 0 1px 1px #ddd inset;' +
+				'border: 1px solid #cccccc;' +
 				'border-radius: 5px;' +
+				'background: #fff;' +
 			'}' +
 			'.simplebox-title {' +
-				'margin: 0 0 5px 0;' +
-				'padding: 2px 5px;' +
-				'background: #F5F5F5;' +
-				'border-radius: 5px 5px 0 0;' +
+				'margin: 0 0 8px;' +
+				'padding: 5px 8px;' +
 			'}' +
 			'.simplebox-content {' +
-				'padding: 5px;' +
-				'background: #F5F5F5;' +
-				'border-radius: 0 0 5px 5px;' +
+				'padding: 0 8px;' +
 			'}' +
 			'.simplebox.align-right {' +
 				'float: right;' +
