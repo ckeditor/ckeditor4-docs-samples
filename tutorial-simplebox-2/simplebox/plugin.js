@@ -63,6 +63,9 @@ CKEDITOR.plugins.add( 'simplebox', {
 				'div(!simplebox,align-left,align-right,align-center){width};' +
 				'div(!simplebox-content); h2(!simplebox-title)',
 
+			// Minimum HTML which is required by this widget to work.
+			requiredContent: 'div(simplebox)',
+
 			// Define two nested editable areas.
 			editables: {
 				title: {
