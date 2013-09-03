@@ -34,16 +34,6 @@ CKEDITOR.plugins.add( 'simplebox', {
 			'}' +
 			'.simplebox-content {' +
 				'padding: 0 8px;' +
-			'}' +
-			'.simplebox.align-right {' +
-				'float: right;' +
-			'}' +
-			'.simplebox.align-left {' +
-				'float: left;' +
-			'}' +
-			'.simplebox.align-center {' +
-				'margin-left: auto;' +
-				'margin-right: auto;' +
 			'}'
 		);
 	},
@@ -56,9 +46,7 @@ CKEDITOR.plugins.add( 'simplebox', {
 			// Read more about the Advanced Content Filter here:
 			// * http://docs.ckeditor.com/#!/guide/dev_advanced_content_filter
 			// * http://docs.ckeditor.com/#!/guide/plugin_sdk_integration_with_acf
-			allowedContent:
-				'div(!simplebox,align-left,align-right,align-center){width};' +
-				'div(!simplebox-content); h2(!simplebox-title)',
+			allowedContent: 'div(!simplebox); div(!simplebox-content); h2(!simplebox-title)',
 
 			// Minimum HTML which is required by this widget to work.
 			requiredContent: 'div(simplebox)',
