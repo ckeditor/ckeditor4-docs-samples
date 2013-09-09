@@ -4,7 +4,7 @@ CKEDITOR.plugins.add( 'simplebox', {
 	requires: 'widget',
 
 	// Register the icon used for the toolbar button.
-	icons: 'widgetsimplebox',
+	icons: 'simplebox',
 
 	onLoad: function() {
 		// Styles used for widget editing. Do this "onLoad" because it should be
