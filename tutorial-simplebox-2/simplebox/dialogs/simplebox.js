@@ -10,6 +10,7 @@ CKEDITOR.dialog.add( 'simplebox', function( editor ) {
 		minHeight: 100,
 		contents: [
 			{
+				id: 'info',
 				elements: [
 					{
 						id: 'align',
