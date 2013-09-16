@@ -6,48 +6,6 @@ CKEDITOR.plugins.add( 'simplebox', {
 	// Register the icon used for the toolbar button.
 	icons: 'simplebox',
 
-	onLoad: function() {
-		// Styles used for widget editing. Do this "onLoad" because it should be
-		// executed just once on plugin loading, not for each editor instance.
-		//
-		// Note: This styles may be overridden by styles defined in editor's
-		// contents.css file or in page's stylesheets.
-		// Plugin's developer can also leave styling for plugin's users completely.
-		CKEDITOR.addCss(
-			'.simplebox {' +
-				'padding: 8px;' +
-				'margin: 10px;' +
-				'background: #eee;' +
-				'border-radius: 8px;' +
-				'border: 1px solid #ddd;' +
-				'box-shadow: 0 1px 1px #fff inset, 0 -1px 0px #ccc inset;' +
-			'}' +
-			'.simplebox-title, .simplebox-content {' +
-				'box-shadow: 0 1px 1px #ddd inset;' +
-				'border: 1px solid #cccccc;' +
-				'border-radius: 5px;' +
-				'background: #fff;' +
-			'}' +
-			'.simplebox-title {' +
-				'margin: 0 0 8px;' +
-				'padding: 5px 8px;' +
-			'}' +
-			'.simplebox-content {' +
-				'padding: 0 8px;' +
-			'}' +
-			'.simplebox.align-right {' +
-				'float: right;' +
-			'}' +
-			'.simplebox.align-left {' +
-				'float: left;' +
-			'}' +
-			'.simplebox.align-center {' +
-				'margin-left: auto;' +
-				'margin-right: auto;' +
-			'}'
-		);
-	},
-
 	// The plugin initialization logic goes inside this method.
 	init: function( editor ) {
 		// Register the editing dialog.

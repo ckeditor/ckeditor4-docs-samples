@@ -49,6 +49,13 @@ CKEDITOR.replace( 'editor1', {
 	// Load the simplebox plugin.
 	extraPlugins: 'simplebox',
 
+	// Besides editor's main stylesheet load also simplebox styles.
+	// In the usual case they can be added to the main stylesheet.
+	contentsCss: [
+		'../../../contents.css',
+		'contents.css'
+	],
+
 	// Following options are set to make sample more clear for demonstration purposes.
 
 	// Set height for making more content visible.
