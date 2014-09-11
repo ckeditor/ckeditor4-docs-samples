@@ -20,7 +20,7 @@
 	<p>
 		The custom Abbreviation plugin created in the tutorial lets the user insert abbreviations into their documents.
 		The abbreviations use the <code>&lt;abbr&gt;</code> HTML element and are added through a dialog window that is
-		opened after clicking the dedicated <strong>Insert Abbreviation</strong> toolbar button available in the editor instance below.
+		opened after clicking the dedicated <strong>Insert Abbreviation</strong> (<img src="../icons/abbr.png">) toolbar button available in the editor instance below.
 	</p>
 
 	<p>
@@ -35,28 +35,30 @@
 
 	<script>
 
-CKEDITOR.replace( 'editor1', {
-	// Load the abbr plugin.
-	extraPlugins: 'abbr',
-	allowedContent: true,
+		CKEDITOR.replace( 'editor1', {
+			// Load the abbr plugin.
+			extraPlugins: 'abbr',
 
-	// The following options are set to make the sample more clear for demonstration purposes.
+			// Disable Advanced Content Filter as the plugin does not implement it (yet).
+			allowedContent: true,
 
-	// Rearrange toolbar groups and remove unnecessary plugins.
-	toolbarGroups: [
-		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
-		{ name: 'links' },
-		{ name: 'insert' },
-		{ name: 'document',	   groups: [ 'mode' ] },
-		'/',
-		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
-		{ name: 'paragraph',   groups: [ 'list', 'indent' ] },
-		{ name: 'styles' },
-		{ name: 'about' }
-	],
-	removePlugins: 'font,iframe,pagebreak,flash,stylescombo,print,preview,save,smiley,pastetext,pastefromword',
-	removeButtons: 'Anchor,Font,Strike,Subscript,Superscript'
-} );
+			// The following options are set to make the sample more clear for demonstration purposes.
+
+			// Rearrange toolbar groups and remove unnecessary plugins.
+			toolbarGroups: [
+				{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+				{ name: 'links' },
+				{ name: 'insert' },
+				{ name: 'document',	   groups: [ 'mode' ] },
+				'/',
+				{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+				{ name: 'paragraph',   groups: [ 'list', 'indent' ] },
+				{ name: 'styles' },
+				{ name: 'about' }
+			],
+			removePlugins: 'font,iframe,pagebreak,flash,stylescombo,print,preview,save,smiley,pastetext,pastefromword',
+			removeButtons: 'Anchor,Font,Strike,Subscript,Superscript'
+		} );
 
 	</script>
 
