@@ -76,7 +76,7 @@ CKEDITOR.dialog.add( 'abbrDialog', function( editor ) {
 			if ( id )
 				abbr.setAttribute( 'id', id );
 
-			// Finally, insert the element at the editor caret position.
+			// Finally, insert the element into the editor at the caret position.
 			editor.insertElement( abbr );
 		}
 	};
