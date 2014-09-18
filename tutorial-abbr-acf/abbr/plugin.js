@@ -18,7 +18,7 @@ CKEDITOR.plugins.add( 'abbr', {
 		editor.addCommand( 'abbr', new CKEDITOR.dialogCommand( 'abbrDialog', {
 
 			// Allow the abbr tag with an optional title attribute.
-			allowedContent: 'abbr[title]',
+			allowedContent: 'abbr[title,id]',
 
 			// Require the abbr tag to be allowed for the feature to work.
 			requiredContent: 'abbr',
