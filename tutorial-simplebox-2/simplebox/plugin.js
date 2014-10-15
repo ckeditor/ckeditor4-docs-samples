@@ -1,3 +1,13 @@
+/**
+ * Copyright (c) 2014, CKSource - Frederico Knabben. All rights reserved.
+ * Licensed under the terms of the MIT License (see LICENSE.md).
+ *
+ * Simple CKEditor Widget (Part 2).
+ *
+ * Created out of the CKEditor Widget SDK:
+ * http://docs.ckeditor.com/#!/guide/widget_sdk_tutorial_2
+ */
+
 // Register the plugin within the editor.
 CKEDITOR.plugins.add( 'simplebox', {
 	// This plugin requires the Widgets System defined in the 'widget' plugin.
