@@ -32,3 +32,7 @@ Now open the plugin sample in your browser. The URL will look like:
 
     For example:
     http://localhost/ckeditor-dev/plugins/simplebox/samples/simplebox.html
+    
+License
+-------
+For license details see: [LICENSE.md](https://github.com/ckeditor/ckeditor-docs-samples/blob/master/LICENSE.md).
