@@ -3,7 +3,7 @@ Software License Agreement
 
 Copyright (c) 2014, CKSource - Frederico Knabben. All rights reserved.
 
-Alle the sample plugins are licensed under the terms of the MIT License (see Appendix A):
+All sample plugins are licensed under the terms of the MIT License (see Appendix A):
 
 	http://en.wikipedia.org/wiki/MIT_License
 
