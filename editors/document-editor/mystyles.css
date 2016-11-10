@@ -1,0 +1,23 @@
+body.document-editor {
+    width: 15.8cm;
+    min-height: 21cm;
+    padding: 1cm 2cm 2cm;
+    margin: 0.5cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+body.document-editor, body.document-editor td, body.document-editor th {
+    font-size: 0.9em;
+}
+
+body.document-editor table {
+    margin-top:0.5cm;
+    margin-bottom:0.5cm;
+}
+
+body.document-editor h1 {
+    margin-bottom:1cm;
+}

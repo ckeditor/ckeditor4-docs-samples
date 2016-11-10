@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="//cdn.ckeditor.com/4.6.0-441b33b/standard-all/ckeditor/ckeditor.js"></script>
+	<title>Article Editor</title>
+	<style type="text/css">
+		/* Minimal styling to add some padding around the editor in this sample */
+		body {
+			padding: 30px;
+		}
+		.container {
+			max-width: 1200px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h2><label for="editor1">Article Editor</label></h2>
+	<textarea id="editor1">
+	&lt;figure class="image image-illustration" style="float:left"&gt;
+		&lt;img alt="" height="266" src="http://c.cksource.com/a/1/img/demo/brownie.jpg" width="400" /&gt;
+		&lt;figcaption&gt;Bon App&amp;eacute;tit!&lt;/figcaption&gt;
+	&lt;/figure&gt;
+	&lt;h2&gt;CKEditor Brownies&lt;/h2&gt;
+	&lt;h3&gt;Ingredients:&lt;/h3&gt;
+	&lt;ul&gt;
+		&lt;li&gt;½ cup flour&lt;/li&gt;
+		&lt;li&gt;1 cup sugar&lt;/li&gt;
+		&lt;li&gt;½ cup butter, melted&lt;/li&gt;
+		&lt;li&gt;2 eggs&lt;/li&gt;
+		&lt;li&gt;1/3 cup cocoa powder&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Preheat the oven to &lt;strong&gt;350°F&lt;/strong&gt; and grease the baking pan.
+		Combine the flour, sugar and cocoa powder in a medium bowl. In another small bowl, whisk together the butter and eggs. Stir the two mixtures until just combined.
+		Bake the brownies for 25 to 35 minutes. Remove from the oven and let it cool for 5 minutes.
+	&lt;/p&gt;
+	</textarea>
+</div>
+<script>
+	CKEDITOR.replace( 'editor1', {
+		// Define the toolbar: http://docs.ckeditor.com/#!/guide/dev_toolbar
+		toolbar: [
+			{ name: 'clipboard', items: [ 'Undo', 'Redo' ] },
+			{ name: 'styles', items: [ 'Styles', 'Format' ] },
+			{ name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+			{ name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+			{ name: 'links', items: [ 'Link', 'Unlink' ] },
+			{ name: 'insert', items: [ 'Image', 'EmbedSemantic', 'Table' ] },
+			{ name: 'tools', items: [ 'Maximize' ] },
+			{ name: 'editing', items: [ 'Scayt' ] }
+		],
+
+		// Enabling extra plugins, available in the standard-all preset: http://ckeditor.com/presets-all
+		extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
+
+		/*********************** File management support ***********************/
+		// In order to turn on support for file uploads, CKEditor has to be configured to use some server side
+		// solution with file upload/management capabilities, like for example CKFinder.
+		// For more information see http://docs.ckeditor.com/#!/guide/dev_ckfinder_integration
+
+		// Uncomment and correct these lines after you setup your local CKFinder instance.
+		// filebrowserBrowseUrl: 'http://example.com/ckfinder/ckfinder.html',
+		// filebrowserUploadUrl: 'http://example.com/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+		/*********************** File management support ***********************/
+
+		// Remove the default image plugin because image2, which offers captions for images, was enabled above.
+		removePlugins: 'image',
+
+		// Make the editing area bigger than default.
+		height: 461,
+
+		// An array of stylesheets to style the WYSIWYG area.
+		// Note: it is recommended to keep your own styles in a separate file in order to make future updates painless.
+		contentsCss: [ 'http://cdn.ckeditor.com/4.6.0-441b33b/standard-all/ckeditor/contents.css', 'mystyles.css' ],
+
+		// This is optional, but will let us define multiple different styles for multiple editors using the same CSS file.
+		bodyClass: 'article-editor',
+
+		// Reduce the list of block elements listed in the Format dropdown to the most commonly used.
+		format_tags: 'p;h1;h2;h3;pre',
+
+		// Simplify the Image and Link dialog windows. The "Advanced" tab is not needed in most cases.
+		removeDialogTabs: 'image:advanced;link:advanced',
+
+		// Define the list of styles which should be available in the Styles dropdown list.
+		// When using the "class" attribute as a style, make sure to define the style for the class in "mystyles.css"
+		// For more information see http://docs.ckeditor.com/#!/guide/dev_styles
+		stylesSet: [
+			/* Inline Styles */
+			{ name: 'Marker',			element: 'span', attributes: { 'class': 'marker' } },
+			{ name: 'Cited Work',		element: 'cite' },
+			{ name: 'Inline Quotation',	element: 'q' },
+
+			/* Object Styles */
+			{
+				name: 'Special Container',
+				element: 'div',
+				styles: {
+					padding: '5px 10px',
+					background: '#eee',
+					border: '1px solid #ccc'
+				}
+			},
+			{
+				name: 'Compact table',
+				element: 'table',
+				attributes: {
+					cellpadding: '5',
+					cellspacing: '0',
+					border: '1',
+					bordercolor: '#ccc'
+				},
+				styles: {
+					'border-collapse': 'collapse'
+				}
+			},
+			{ name: 'Borderless Table',		element: 'table',	styles: { 'border-style': 'hidden', 'background-color': '#E6E6FA' } },
+			{ name: 'Square Bulleted List',	element: 'ul',		styles: { 'list-style-type': 'square' } },
+
+			/* Widget Styles */
+			// We use this one to style the brownie picture.
+			{ name: 'Illustration', type: 'widget', widget: 'image', attributes: { 'class': 'image-illustration' } },
+			// Media embed
+			{ name: '240p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-240p' } },
+			{ name: '360p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-360p' } },
+			{ name: '480p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-480p' } },
+			{ name: '720p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-720p' } },
+			{ name: '1080p', type: 'widget', widget: 'embedSemantic', attributes: { 'class': 'embed-1080p' } }
+		]
+	} );
+</script>
+</body>
+</html>
