@@ -40,6 +40,8 @@
 <script>
 	CKEDITOR.replace( 'editor1', {
 		// Define the toolbar: http://docs.ckeditor.com/#!/guide/dev_toolbar
+		// The standard preset from CDN which we used as a base provides more features than we need.
+		// Also by default it comes with a 2-line toolbar. Here we put all buttons in a single row.
 		toolbar: [
 			{ name: 'clipboard', items: [ 'Undo', 'Redo' ] },
 			{ name: 'styles', items: [ 'Styles', 'Format' ] },
@@ -50,6 +52,11 @@
 			{ name: 'tools', items: [ 'Maximize' ] },
 			{ name: 'editing', items: [ 'Scayt' ] }
 		],
+
+		// Since we define all configuration options here, let's instruct CKEditor to not load config.js which it does by default.
+		// One HTTP request less will result in a faster startup time.
+		// For more information check http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-customConfig
+		customConfig: '',
 
 		// Enabling extra plugins, available in the standard-all preset: http://ckeditor.com/presets-all
 		extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
@@ -84,7 +91,10 @@
 		removeDialogTabs: 'image:advanced;link:advanced',
 
 		// Define the list of styles which should be available in the Styles dropdown list.
-		// When using the "class" attribute as a style, make sure to define the style for the class in "mystyles.css"
+		// If the "class" attribute is used to style an element, make sure to define the style for the class in "mystyles.css"
+		// (and on your website so that it rendered in the same way).
+		// Note: by default CKEditor looks for styles.js file. Defining stylesSet inline (as below) stops CKEditor from loading
+		// that file, which means one HTTP request less (and a faster startup).
 		// For more information see http://docs.ckeditor.com/#!/guide/dev_styles
 		stylesSet: [
 			/* Inline Styles */
