@@ -128,10 +128,6 @@ CKEDITOR.dialog.add( 'abbrDialog', function( editor ) {
 		// This method is invoked once a user clicks the OK button, confirming the dialog.
 		onOk: function() {
 
-			// The context of this function is the dialog object itself.
-			// http://docs.ckeditor.com/#!/api/CKEDITOR.dialog
-			var dialog = this;
-
 			// Create a new <abbr> element.
 			var abbr = this.element;
 
