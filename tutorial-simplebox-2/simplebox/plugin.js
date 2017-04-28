@@ -109,7 +109,7 @@ CKEDITOR.plugins.add( 'simplebox', {
 				if ( this.data.width == '' )
 					this.element.removeStyle( 'width' );
 				else
-					this.element.setStyle( 'width', this.data.width );
+					this.element.setStyle( 'width', this.data.width + 'px');
 
 				// Brutally remove all align classes and set a new one if "align" widget data is set.
 				this.element.removeClass( 'align-left' );
