@@ -1,55 +1,149 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 body.article-editor {
-    font-size:1em;
-    font-family:'Roboto', serif;
-    font-weight:300;
+    font-size:16px;
+    font-family:'Nunito Sans' Verdana Helvatica sans-serif;
+    line-height: 24px;
+    margin: 30px;
 }
 
-body.article-editor .illustration {
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+body.article-editor h1,
+body.article-editor h2,
+body.article-editor h3,
+body.article-editor h4,
+body.article-editor h5 {
+    font-weight: 600;
+    letter-spacing: inherit;
 }
 
-body.article-editor ul {
-    overflow: hidden;
+body.article-editor h1 {
+    font-size: 42px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    line-height: 1.04;
+    margin-bottom: 25px;
 }
 
-body.article-editor h1, h2 {
-    color: #8A4A33;
-    padding-top: 10px;
+body.article-editor h2 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+body.article-editor h3 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+body.article-editor h4 {
+    font-size: 19px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+body.article-editor h5 {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+body.article-editor h4, h5 {
+    font-weight: 700;
+}
+
+body.article-editor h2 + p,
+body.article-editor h2 + ol,
+body.article-editor h2 + ul,
+body.article-editor h3 + p,
+body.article-editor h3 + ol,
+body.article-editor h3 + ul {
+    margin-top: 0;
+}
+
+body.article-editor p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+body.article-editor figure,
+body.article-editor ol,
+body.article-editor ul,
+body.article-editor blockquote {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+body.article-editor ol ol {
+    margin: 0;
+}
+
+body.article-editor ul ul {
+    margin: 0;
+}
+
+body.article-editor figure {
+    text-align: center;
+    margin: 25px;
+    background-color: #fafafa;
+    border: none;
+    padding: 0;
+}
+
+body.article-editor figure img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+body.article-editor figure figcaption {
+    padding: 1em .5em;
+    font-size: 13px;
+    text-align: center;
+}
+
+body.article-editor figure .cke_image_resizer_wrapper {
+    display: block;
 }
 
 .image-illustration {
     background-color: white;
 }
 
-.embed-240p {
+.embed-240p
+{
     max-width: 426px;
     max-height: 240px;
     margin:0 auto;
 }
 
-.embed-360p {
+.embed-360p
+{
     max-width: 640px;
     max-height: 360px;
     margin:0 auto;
 }
 
-.embed-480p {
+.embed-480p
+{
     max-width: 854px;
     max-height: 480px;
     margin:0 auto;
 }
 
-.embed-720p {
+.embed-720p
+{
     max-width: 1280px;
     max-height: 720px;
     margin:0 auto;
 }
 
-.embed-1080p {
+.embed-1080p
+{
     max-width: 1920px;
     max-height: 1080px;
     margin:0 auto;

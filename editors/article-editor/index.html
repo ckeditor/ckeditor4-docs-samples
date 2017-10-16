@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script src="https://cdn.ckeditor.com/4.6.1/standard-all/ckeditor.js"></script>
+	<script src="https://cdn.ckeditor.com/4.7.3/standard-all/ckeditor.js"></script>
 	<title>Article Editor</title>
 	<style type="text/css">
 		/* Minimal styling to add some padding around the editor in this sample */
@@ -10,7 +10,7 @@
 			padding: 30px;
 		}
 		.container {
-			max-width: 1200px;
+			max-width: 1130px;
 		}
 	</style>
 </head>
@@ -18,23 +18,19 @@
 <div class="container">
 	<h2><label for="editor1">Article Editor</label></h2>
 	<textarea id="editor1">
-	&lt;figure class="image image-illustration" style="float:left"&gt;
-		&lt;img alt="" height="266" src="http://c.cksource.com/a/1/img/demo/brownie.jpg" width="400" /&gt;
-		&lt;figcaption&gt;Bon App&amp;eacute;tit!&lt;/figcaption&gt;
-	&lt;/figure&gt;
-	&lt;h2&gt;CKEditor Brownies&lt;/h2&gt;
-	&lt;h3&gt;Ingredients:&lt;/h3&gt;
-	&lt;ul&gt;
-		&lt;li&gt;½ cup flour&lt;/li&gt;
-		&lt;li&gt;1 cup sugar&lt;/li&gt;
-		&lt;li&gt;½ cup butter, melted&lt;/li&gt;
-		&lt;li&gt;2 eggs&lt;/li&gt;
-		&lt;li&gt;1/3 cup cocoa powder&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;Preheat the oven to &lt;strong&gt;350°F&lt;/strong&gt; and grease the baking pan.
-		Combine the flour, sugar and cocoa powder in a medium bowl. In another small bowl, whisk together the butter and eggs. Stir the two mixtures until just combined.
-		Bake the brownies for 25 to 35 minutes. Remove from the oven and let it cool for 5 minutes.
-	&lt;/p&gt;
+		&lt;h2&gt;Essential things to think about before starting a blog&lt;/h2&gt;
+        &lt;figure class="image illustration" style="float:right;"&gt;&lt;img alt="A picture of wooden spoons with spices and herbs in them." src="https://ckeditor.com/assets/images/bg/spoons.jpg" width="450px"/&gt;
+        	&lt;figcaption&gt;It takes several ingredients to create a delicious blog.&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;p&gt;It has been exactly 3 years since I wrote my first blog series entitled “Flavorful Tuscany”, but starting it was definitely not easy. Back then, I didn’t know much about blogging, let alone think that one day it could become &lt;strong&gt;my full-time job&lt;/strong&gt;. Even though I had many recipes and food-related stories to tell, it never crossed my mind that I could be sharing them with the whole world&lt;/p&gt;
+        &lt;p&gt;I am now a &lt;strong&gt;full-time blogger&lt;/strong&gt; and the curator of the &lt;a href="https://ckeditor.com/ckeditor-4/#"&gt;Simply delicious newsletter&lt;/a&gt;, sharing stories about traveling and cooking, as well as tips on how to run a successful blog.&lt;/p&gt;
+        &lt;p&gt;If you are tempted by the idea of creating your own blog, please think about the following:&lt;/p&gt;
+        &lt;ul&gt;
+        	&lt;li&gt;Your story (what do you want to tell your audience)&lt;/li&gt;
+        	&lt;li&gt;Your audience (who do you write for)&lt;/li&gt;
+        	&lt;li&gt;Your blog name and design&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;After you get your head around these 3 essentials, all you have to do is grab your keyboard and the rest will follow.&lt;/p&gt;
 	</textarea>
 </div>
 <script>
@@ -75,11 +71,11 @@
 		removePlugins: 'image',
 
 		// Make the editing area bigger than default.
-		height: 461,
+		height: 600,
 
 		// An array of stylesheets to style the WYSIWYG area.
 		// Note: it is recommended to keep your own styles in a separate file in order to make future updates painless.
-		contentsCss: [ 'https://cdn.ckeditor.com/4.6.1/standard-all/contents.css', 'mystyles.css' ],
+		contentsCss: [ 'https://cdn.ckeditor.com/4.7.3/standard-all/contents.css', 'mystyles.css' ],
 
 		// This is optional, but will let us define multiple different styles for multiple editors using the same CSS file.
 		bodyClass: 'article-editor',
