@@ -1,6 +1,6 @@
 # Example CKEditor Setups
 
-This folder contains all the necessary code to run some of the CKEditor setups mentioned in the [Example CKEditor Setups](http://docs.ckeditor.com/#!/guide/dev_example_setups) article. All samples load CKEditor from [the official CDN](https://cdn.ckeditor.com/) so no additional download of any CKEditor package is required.
+This folder contains all the necessary code to run some of the CKEditor setups mentioned in the [Example CKEditor Setups](https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_example_setups) article. All samples load CKEditor from [the official CDN](https://cdn.ckeditor.com/) so no additional download of any CKEditor package is required.
 
 ## Running examples
 
@@ -10,7 +10,7 @@ This folder contains all the necessary code to run some of the CKEditor setups m
 
 2. Open editors/*example-setup*/index.html in your browser.
 
-### Not familiar with git? ###
+### Not familiar with Git? ###
 
 1. Go to the file you want to download.
 2. Click it to view the contents within the GitHub UI.
