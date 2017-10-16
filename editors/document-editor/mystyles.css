@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,400,400i,600,600i,700,700i');
+
 body.document-editor {
     width: 15.8cm;
     min-height: 21cm;
@@ -7,10 +9,19 @@ body.document-editor {
     border-radius: 5px;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Nunito Sans", Verdana, Helvatica, sans-serif;
 }
 
-body.document-editor, body.document-editor td, body.document-editor th {
+body.document-editor td, body.document-editor th {
     font-size: 0.9em;
+}
+
+body.document-editor h1 {
+    margin-bottom:1cm;
 }
 
 body.document-editor table {
@@ -18,6 +29,24 @@ body.document-editor table {
     margin-bottom:0.5cm;
 }
 
-body.document-editor h1 {
-    margin-bottom:1cm;
+body.document-editor table td {
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+body.document-editor table td:first-of-type {
+    border-left: 1px solid #d0d0d0;
+}
+
+body.document-editor table tr:first-of-type td {
+    border-top: 1px solid #d0d0d0;
+}
+
+body.document-editor table thead th {
+    border-top: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+}
+
+body.document-editor table thead th:first-of-type {
+    border-left: 1px solid #d0d0d0;
 }
