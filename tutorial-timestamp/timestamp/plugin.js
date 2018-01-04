@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2014-2016, CKSource - Frederico Knabben. All rights reserved.
+ * Copyright (c) 2014-2018, CKSource - Frederico Knabben. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
  * Basic sample plugin inserting current date and time into the CKEditor editing area.
  *
  * Created out of the CKEditor Plugin SDK:
- * http://docs.ckeditor.com/#!/guide/plugin_sdk_intro
+ * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_intro
  */
 
 // Register the plugin within the editor.

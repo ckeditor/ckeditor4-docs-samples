@@ -1,11 +1,11 @@
 Code samples for CKEditor documentation
 =====================
 
-This repository contains ready-to-use code samples created for the [CKEditor documentation](http://docs.ckeditor.com).
+This repository contains ready-to-use code samples created for the [CKEditor 4 documentation](https://docs.ckeditor.com/ckeditor4/docs/) and [website](https://ckeditor.com/ckeditor-4/).
 
 In order to see a sample in action, copy its source to the CKEditor `plugins` directory.
 
-1. Download a CKEditor package. Note that for development purposes it is recommended to download the source version. You can do this by downloading [your own CKEditor build](http://ckeditor.com/builder) (note the sample's requirements) and checking the "Source (Big N’Slow)" option at the bottom. You can also clone the [CKEditor development repository](https://github.com/ckeditor/ckeditor-dev) and proceed from there.
+1. Download a CKEditor package. Note that for development purposes it is recommended to download the source version. You can do this by downloading [your own CKEditor build](https://ckeditor.com/cke4/builder) (note the sample's requirements) and checking the "Source (Big N’Slow)" option at the bottom. You can also clone the [CKEditor development repository](https://github.com/ckeditor/ckeditor-dev) and proceed from there.
 
 2. Copy the plugin directory which you can find in every sample to the `plugins` directory in the installed CKEditor package.
 
@@ -15,7 +15,7 @@ For example:
     git clone https://github.com/ckeditor/ckeditor-dev.git
     git clone https://github.com/ckeditor/ckeditor-docs-samples.git
 
-    # Checkout the latest stable branch (equals to latest release available on http://ckeditor.com/download).
+    # Checkout the latest stable branch (equals to latest release available on https://ckeditor.com/ckeditor-4/download/).
     cd ckeditor-dev
     git co stable
     cd ..

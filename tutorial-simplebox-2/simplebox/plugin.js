@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2014-2016, CKSource - Frederico Knabben. All rights reserved.
+ * Copyright (c) 2014-2018, CKSource - Frederico Knabben. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
  * Simple CKEditor Widget (Part 2).
  *
  * Created out of the CKEditor Widget SDK:
- * http://docs.ckeditor.com/#!/guide/widget_sdk_tutorial_2
+ * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/widget_sdk_tutorial_2
  */
 
 // Register the plugin within the editor.
@@ -26,8 +26,8 @@ CKEDITOR.plugins.add( 'simplebox', {
 		editor.widgets.add( 'simplebox', {
 			// Allow all HTML elements, classes, and styles that this widget requires.
 			// Read more about the Advanced Content Filter here:
-			// * http://docs.ckeditor.com/#!/guide/dev_advanced_content_filter
-			// * http://docs.ckeditor.com/#!/guide/plugin_sdk_integration_with_acf
+			// * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_advanced_content_filter
+			// * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_integration_with_acf
 			allowedContent:
 				'div(!simplebox,align-left,align-right,align-center){width};' +
 				'div(!simplebox-content); h2(!simplebox-title)',
@@ -74,7 +74,7 @@ CKEDITOR.plugins.add( 'simplebox', {
 
 			// Check the elements that need to be converted to widgets.
 			//
-			// Note: The "element" argument is an instance of http://docs.ckeditor.com/#!/api/CKEDITOR.htmlParser.element
+			// Note: The "element" argument is an instance of http://docs.ckeditor.com/ckeditor4/docs/#!/api/CKEDITOR.htmlParser.element
 			// so it is not a real DOM element yet. This is caused by the fact that upcasting is performed
 			// during data processing which is done on DOM represented by JavaScript objects.
 			upcast: function( element ) {

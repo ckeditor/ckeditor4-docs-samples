@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2014-2016, CKSource - Frederico Knabben. All rights reserved.
+ * Copyright (c) 2014-2018, CKSource - Frederico Knabben. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
  * Simple CKEditor Widget (Part 1).
  *
  * Created out of the CKEditor Widget SDK:
- * http://docs.ckeditor.com/#!/guide/widget_sdk_tutorial_1
+ * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/widget_sdk_tutorial_1
  */
 
 // Register the plugin within the editor.
@@ -23,8 +23,8 @@ CKEDITOR.plugins.add( 'simplebox', {
 		editor.widgets.add( 'simplebox', {
 			// Allow all HTML elements and classes that this widget requires.
 			// Read more about the Advanced Content Filter here:
-			// * http://docs.ckeditor.com/#!/guide/dev_advanced_content_filter
-			// * http://docs.ckeditor.com/#!/guide/plugin_sdk_integration_with_acf
+			// * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_advanced_content_filter
+			// * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_integration_with_acf
 			allowedContent: 'div(!simplebox); div(!simplebox-content); h2(!simplebox-title)',
 
 			// Minimum HTML which is required by this widget to work.

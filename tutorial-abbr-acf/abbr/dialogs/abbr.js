@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2014-2016, CKSource - Frederico Knabben. All rights reserved.
+ * Copyright (c) 2014-2018, CKSource - Frederico Knabben. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
  * The abbr plugin dialog window definition.
  *
  * Created out of the CKEditor Plugin SDK:
- * http://docs.ckeditor.com/#!/guide/plugin_sdk_sample_1
+ * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_sample_1
  */
 
 // Our dialog definition.
@@ -135,7 +135,7 @@ CKEDITOR.dialog.add( 'abbrDialog', function( editor ) {
 		onOk: function() {
 
 			// The context of this function is the dialog object itself.
-			// http://docs.ckeditor.com/#!/api/CKEDITOR.dialog
+			// http://docs.ckeditor.com/ckeditor4/docs/#!/api/CKEDITOR.dialog
 			var dialog = this;
 
 			// Create a new <abbr> element.
