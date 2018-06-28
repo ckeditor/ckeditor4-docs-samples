@@ -49,7 +49,6 @@ CKEDITOR.plugins.add( 'autotag', {
 			config.textTestCallback = textTestCallback;
 
 			// The itemsArray variable is the example "database".
-
 			var itemsArray = [ {
 					id: 1703,
 					name: 'Mentions plugin'
