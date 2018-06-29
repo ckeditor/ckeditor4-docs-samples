@@ -49,17 +49,70 @@ CKEDITOR.plugins.add( 'autotag', {
 			config.textTestCallback = textTestCallback;
 
 			// The itemsArray variable is the example "database".
-			var itemsArray = [ {
+			var itemsArray = [
+				{
+					id: 440,
+					name: 'Moving issues to GitHub'
+				},
+				{
+					id: 468,
+					name: 'Support for Clipboard API in Edge'
+				},
+				{
+					id: 558,
+					name: 'Prevent copying images from Word'
+				},
+				{
+					id: 556,
+					name: 'CKEditor changes Table Style and Border'
+				},
+				{
+					id: 556,
+					name: 'CKEditor changes Table Style and Border'
+				},
+				{
+					id: 616,
+					name: 'Parse function for CSS border param'
+				},
+				{
+					id: 648,
+					name: 'Delete columns work incorrectly with native selection on Chrome'
+				},
+				{
+					id: 740,
+					name: 'selectionChange event integration with tableselection plugin'
+				},
+				{
+					id: 786,
+					name: 'Generic manual test for tableselection'
+				},
+				{
+					id: 856,
+					name: 'Introduce tools.keystrokeToArray method'
+				},
+				{
+					id: 932,
+					name: 'Easy Image plugin'
+				},
+				{
+					id: 933,
+					name: 'Balloon Toolbar'
+				},
+				{
 					id: 1703,
 					name: 'Mentions plugin'
+				},
+				{
+					id: 1746,
+					name: 'Emoji plugin'
 				},
 				{
 					id: 1751,
 					name: 'Autocomplete plugin'
 				},
 				{
-					id: 1746,
-					name: 'Emoji plugin'
+					id: 1993,
+					name: 'Throttling function'
 				},
 				{
 					id: 2062,
