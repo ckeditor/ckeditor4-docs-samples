@@ -9,6 +9,49 @@ Licensed under the terms of the MIT License (see LICENSE.md).
 	<meta charset="utf-8">
 	<script src="../../../ckeditor.js"></script>
 	<link href="../../../samples/css/samples.css" rel="stylesheet">
+
+	<style>
+		ul.cke_autocomplete_panel {
+			width: 300px;
+		}
+		ul.cke_autocomplete_panel > li {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		ul.cke_autocomplete_panel > li.cke_autocomplete_selected.issue-feature,
+		ul.cke_autocomplete_panel > li.issue-feature:hover {
+			background-color: rgb(66,134,244);
+		}
+		ul.cke_autocomplete_panel > li.cke_autocomplete_selected.issue-bug,
+		ul.cke_autocomplete_panel > li.issue-bug:hover {
+			background-color: rgb(255,160,168);
+		}
+		ul.cke_autocomplete_panel > li.cke_autocomplete_selected.issue-task,
+		ul.cke_autocomplete_panel > li.issue-task:hover {
+			background-color: rgb(255,221,160);
+		}
+		.issue-feature {
+			color: #fafafa;
+			background-color: rgb(66,134,244,0.9);
+		}
+		.issue-bug {
+			background-color: rgb(255,160,168,0.9);
+		}
+		.issue-task {
+			background-color: rgb(255,221,160,0.9);
+		}
+		.issue-bug::before {
+			content: "🐛 "
+		}
+		.issue-feature::before {
+			content: "⭐ "
+		}
+		.issue-task::before {
+			content: "👷 "
+		}
+	</style>
+
 </head>
 <body>
 	<h1 class="samples">
@@ -26,7 +69,7 @@ Licensed under the terms of the MIT License (see LICENSE.md).
 
 	<textarea id="editor1" cols="10" rows="10">
 		<p>
-		Start typing, for instance "#1": Mentions plugin (#1703) #1
+		Start typing, for instance "#1":
 		</p>
 	</textarea>
 

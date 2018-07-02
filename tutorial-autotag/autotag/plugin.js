@@ -35,7 +35,7 @@ CKEDITOR.plugins.add( 'autotag', {
 				// Get the text before the caret.
 				var left = text.slice( 0, offset ),
 					// Will look for a '#' character followed by a ticket number.
-					match = left.match( /#\d+$/ );
+					match = left.match( /#\d*$/ );
 
 				if ( !match ) {
 					return null;
@@ -51,68 +51,124 @@ CKEDITOR.plugins.add( 'autotag', {
 			// The itemsArray variable is the example "database".
 			var itemsArray = [
 				{
+					id: 337,
+					name: 'Paste from Excel improvements',
+					type: 'feature'
+				},
+				{
 					id: 440,
-					name: 'Moving issues to GitHub'
+					name: 'Moving issues to GitHub',
+					type: 'bug'
 				},
 				{
 					id: 468,
-					name: 'Support for Clipboard API in Edge'
+					name: 'Support for Clipboard API in Edge',
+					type: 'task'
 				},
 				{
 					id: 558,
-					name: 'Prevent copying images from Word'
+					name: 'Prevent copying images from Word',
+					type: 'feature'
 				},
 				{
-					id: 556,
-					name: 'CKEditor changes Table Style and Border'
+					id: 566,
+					name: 'CKEditor changes Table Style and Border',
+					type: 'bug',
+				},
+				{
+					id: 584,
+					name: 'Fonts setting should not be toggling options',
+					type: 'feature'
 				},
 				{
 					id: 616,
-					name: 'Parse function for CSS border param'
+					name: 'Parse function for CSS border param',
+					type: 'feature'
 				},
 				{
 					id: 648,
-					name: 'Delete columns work incorrectly with native selection on Chrome'
+					name: 'Delete columns work incorrectly with native selection on Chrome',
+					type: 'bug'
 				},
 				{
 					id: 740,
-					name: 'selectionChange event integration with tableselection plugin'
+					name: 'selectionChange event integration with tableselection plugin',
+					type: 'feature'
 				},
 				{
 					id: 786,
-					name: 'Generic manual test for tableselection'
+					name: 'Generic manual test for tableselection',
+					type: 'task'
 				},
 				{
 					id: 856,
-					name: 'Introduce tools.keystrokeToArray method'
+					name: 'Introduce tools.keystrokeToArray method',
+					type: 'feature'
+				},
+				{
+					id: 859,
+					name: 'Double-click on link opens empty link dialog due to bug in getSelectedLink',
+					type: 'bug'
 				},
 				{
 					id: 932,
-					name: 'Easy Image plugin'
+					name: 'Easy Image plugin',
+					type: 'feature'
 				},
 				{
 					id: 933,
-					name: 'Balloon Toolbar'
+					name: 'Balloon Toolbar',
+					type: 'feature'
+				},
+				{
+					id: 1010,
+					name: '"border-color" in tables gets removed',
+					type: 'bug'
+				},
+				{
+					id: 1529,
+					name: 'Invalid images selection after paste',
+					type: 'bug'
+				},
+				{
+					id: 1530,
+					name: 'Possibility to use custom icons in buttons',
+					type: 'feature'
+				},
+				{
+					id: 1570,
+					name: 'Fake selection allows for cutting in a readonly mode',
+					type: 'bug'
 				},
 				{
 					id: 1703,
-					name: 'Mentions plugin'
+					name: 'Mentions plugin',
+					type: 'feature'
 				},
 				{
 					id: 1746,
-					name: 'Emoji plugin'
+					name: 'Emoji plugin',
+					type: 'feature'
 				},
 				{
 					id: 1751,
-					name: 'Autocomplete plugin'
+					name: 'Autocomplete plugin',
+					type: 'feature'
+				},
+				{
+					id: 1776,
+					name: 'Empty placeholder not hidden when blurred',
+					type: 'bug'
 				},
 				{
 					id: 1993,
-					name: 'Throttling function'
+					name: 'Throttling function',
+					type: 'feature'
 				},
 				{
 					id: 2062,
-					name: 'Emoji list button'
+					name: 'Emoji list button',
+					type: 'feature'
 				}
 			];
 
@@ -136,7 +192,7 @@ CKEDITOR.plugins.add( 'autotag', {
 			config.dataCallback = dataCallback;
 
 			// Define the templates of the autocomplete suggestions dropdown and output text.
-			config.itemTemplate = '<li data-id={id}>#{id}: {name}</li>';
+			config.itemTemplate = '<li data-id={id} class="issue-{type}">#{id}: {name}</li>';
 			config.outputTemplate = '<a href="https://github.com/ckeditor/ckeditor-dev/issues/{id}">{name} (#{id})</a> ';
 
 			// Attach autocomplete to the editor.
