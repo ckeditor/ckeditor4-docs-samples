@@ -67,10 +67,6 @@ CKEDITOR.plugins.add( 'autotag', {
 					name: 'CKEditor changes Table Style and Border'
 				},
 				{
-					id: 556,
-					name: 'CKEditor changes Table Style and Border'
-				},
-				{
 					id: 616,
 					name: 'Parse function for CSS border param'
 				},
