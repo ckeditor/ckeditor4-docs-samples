@@ -192,7 +192,7 @@ CKEDITOR.plugins.add( 'autotag', {
 			config.dataCallback = dataCallback;
 
 			// Define the templates of the autocomplete suggestions dropdown and output text.
-			config.itemTemplate = '<li data-id={id} class="issue-{type}">#{id}: {name}</li>';
+			config.itemTemplate = '<li data-id="{id}" class="issue-{type}">#{id}: {name}</li>';
 			config.outputTemplate = '<a href="https://github.com/ckeditor/ckeditor-dev/issues/{id}">{name} (#{id})</a> ';
 
 			// Attach autocomplete to the editor.
