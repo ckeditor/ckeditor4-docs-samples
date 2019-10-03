@@ -2,8 +2,8 @@
  * Copyright (c) 2014-2018, CKSource - Frederico Knabben. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
- * Simple CKEditor tag autocomple that was built in the
- * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_autocomplete.html tutorial.
+ * Simple CKEditor tag autocomplete that was built in the
+ * https://ckeditor.com/docs/ckeditor4/latest/features/autocomplete.html tutorial.
  */
 
 // Register the plugin in the editor.
@@ -193,7 +193,7 @@ CKEDITOR.plugins.add( 'autotag', {
 
 			// Define the templates of the autocomplete suggestions dropdown and output text.
 			config.itemTemplate = '<li data-id="{id}" class="issue-{type}">#{id}: {name}</li>';
-			config.outputTemplate = '<a href="https://github.com/ckeditor/ckeditor-dev/issues/{id}">{name} (#{id})</a> ';
+			config.outputTemplate = '<a href="https://github.com/ckeditor/ckeditor4/issues/{id}">{name} (#{id})</a> ';
 
 			// Attach autocomplete to the editor.
 			new CKEDITOR.plugins.autocomplete( editor, config );

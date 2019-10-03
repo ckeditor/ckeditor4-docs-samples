@@ -5,7 +5,7 @@
  * Simple CKEditor Widget (Part 1).
  *
  * Created out of the CKEditor Widget SDK:
- * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/widget_sdk_tutorial_1
+ * https://ckeditor.com/docs/ckeditor4/latest/guide/widget_sdk_tutorial_1.html
  */
 
 // Register the plugin within the editor.
@@ -23,8 +23,8 @@ CKEDITOR.plugins.add( 'simplebox', {
 		editor.widgets.add( 'simplebox', {
 			// Allow all HTML elements and classes that this widget requires.
 			// Read more about the Advanced Content Filter here:
-			// * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_advanced_content_filter
-			// * https://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_integration_with_acf
+			// * https://ckeditor.com/docs/ckeditor4/latest/guide/dev_advanced_content_filter.html
+			// * https://ckeditor.com/docs/ckeditor4/latest/guide/plugin_sdk_integration_with_acf.html
 			allowedContent: 'div(!simplebox); div(!simplebox-content); h2(!simplebox-title)',
 
 			// Minimum HTML which is required by this widget to work.
@@ -65,7 +65,7 @@ CKEDITOR.plugins.add( 'simplebox', {
 
 			// Check the elements that need to be converted to widgets.
 			//
-			// Note: The "element" argument is an instance of http://docs.ckeditor.com/#!/api/CKEDITOR.htmlParser.element
+			// Note: The "element" argument is an instance of https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_htmlParser_element.html
 			// so it is not a real DOM element yet. This is caused by the fact that upcasting is performed
 			// during data processing which is done on DOM represented by JavaScript objects.
 			upcast: function( element ) {

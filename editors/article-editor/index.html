@@ -35,7 +35,7 @@
 </div>
 <script>
 	CKEDITOR.replace( 'editor1', {
-		// Define the toolbar: http://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_toolbar
+		// Define the toolbar: https://ckeditor.com/docs/ckeditor4/latest/features/toolbar.html
 		// The standard preset from CDN which we used as a base provides more features than we need.
 		// Also by default it comes with a 2-line toolbar. Here we put all buttons in a single row.
 		toolbar: [
@@ -51,16 +51,16 @@
 
 		// Since we define all configuration options here, let's instruct CKEditor to not load config.js which it does by default.
 		// One HTTP request less will result in a faster startup time.
-		// For more information check http://docs.ckeditor.com/ckeditor4/docs/#!/api/CKEDITOR.config-cfg-customConfig
+		// For more information check https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html#cfg-customConfig
 		customConfig: '',
 
-		// Enabling extra plugins, available in the standard-all preset: http://ckeditor.com/presets-all
+		// Enabling extra plugins, available in the standard-all preset: https://ckeditor.com/cke4/presets-all
 		extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
 
 		/*********************** File management support ***********************/
 		// In order to turn on support for file uploads, CKEditor has to be configured to use some server side
 		// solution with file upload/management capabilities, like for example CKFinder.
-		// For more information see http://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_ckfinder_integration
+		// For more information see https://ckeditor.com/docs/ckeditor4/latest/guide/dev_ckfinder_integration.html
 
 		// Uncomment and correct these lines after you setup your local CKFinder instance.
 		// filebrowserBrowseUrl: 'http://example.com/ckfinder/ckfinder.html',
@@ -91,7 +91,7 @@
 		// (and on your website so that it rendered in the same way).
 		// Note: by default CKEditor looks for styles.js file. Defining stylesSet inline (as below) stops CKEditor from loading
 		// that file, which means one HTTP request less (and a faster startup).
-		// For more information see http://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_styles
+		// For more information see https://ckeditor.com/docs/ckeditor4/latest/features/styles.html
 		stylesSet: [
 			/* Inline Styles */
 			{ name: 'Marker',			element: 'span', attributes: { 'class': 'marker' } },

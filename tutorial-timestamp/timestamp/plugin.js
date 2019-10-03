@@ -5,7 +5,7 @@
  * Basic sample plugin inserting current date and time into the CKEditor editing area.
  *
  * Created out of the CKEditor Plugin SDK:
- * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_intro
+ * https://ckeditor.com/docs/ckeditor4/latest/guide/plugin_sdk_intro.html
  */
 
 // Register the plugin within the editor.
