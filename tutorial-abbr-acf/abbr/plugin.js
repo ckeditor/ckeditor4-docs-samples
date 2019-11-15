@@ -5,7 +5,7 @@
  * Basic sample plugin inserting abbreviation elements into the CKEditor editing area.
  *
  * Created out of the CKEditor Plugin SDK:
- * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_sample_1
+ * https://ckeditor.com/docs/ckeditor4/latest/guide/plugin_sdk_sample_1.html
  */
 
 // Register the plugin within the editor.
@@ -47,7 +47,7 @@ CKEDITOR.plugins.add( 'abbr', {
 		});
 
 		if ( editor.contextMenu ) {
-			
+
 			// Add a context menu group with the Edit Abbreviation item.
 			editor.addMenuGroup( 'abbrGroup' );
 			editor.addMenuItem( 'abbrItem', {

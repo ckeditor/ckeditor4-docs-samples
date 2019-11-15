@@ -5,7 +5,7 @@
  * The abbr plugin dialog window definition.
  *
  * Created out of the CKEditor Plugin SDK:
- * http://docs.ckeditor.com/ckeditor4/docs/#!/guide/plugin_sdk_sample_1
+ * https://ckeditor.com/docs/ckeditor4/latest/guide/plugin_sdk_sample_1.html
  */
 
 // Our dialog definition.
