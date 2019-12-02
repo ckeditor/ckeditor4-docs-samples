@@ -1,5 +1,5 @@
-Code samples for CKEditor documentation
-=====================
+Code samples for CKEditor 4 documentation
+=========================================
 
 This repository contains ready-to-use code samples created for the [CKEditor 4 documentation](https://ckeditor.com/docs/ckeditor4/latest/index.html) and [website](https://ckeditor.com/ckeditor-4/).
 
