@@ -30,7 +30,7 @@ CKEDITOR.plugins.add( 'timestamp', {
 		});
 
 		// Create the toolbar button that executes the above command.
-		editor.ui.addButton( 'Timestamp', {
+		editor.ui.addButton( 'timestamp', {
 			label: 'Insert Timestamp',
 			command: 'insertTimestamp',
 			toolbar: 'insert'
