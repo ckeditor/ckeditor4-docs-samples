@@ -1,7 +1,7 @@
 Software License Agreement
 ==========================
 
-Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
+Copyright (c) 2014-2022, CKSource Holding sp. z o.o. All rights reserved.
 
 All sample plugins are licensed under the terms of the MIT License (see Appendix A):
 

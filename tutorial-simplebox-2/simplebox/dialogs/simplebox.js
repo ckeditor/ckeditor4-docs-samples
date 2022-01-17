@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
+ * Copyright (c) 2014-2022, CKSource Holding sp. z o.o. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  */
 
