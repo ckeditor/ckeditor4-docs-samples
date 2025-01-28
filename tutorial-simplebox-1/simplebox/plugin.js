@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2014-2024, CKSource Holding sp. z o.o. All rights reserved.
+ * Copyright (c) 2014-2025, CKSource Holding sp. z o.o. All rights reserved.
  * Licensed under the terms of the MIT License (see LICENSE.md).
  *
  * Simple CKEditor Widget (Part 1).
